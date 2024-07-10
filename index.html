@@ -319,9 +319,9 @@
 <!-- footer @e -->
     </div>
     <!-- wrap @e -->
-<script src="//cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
-<script src="//cdn.staticfile.org/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
-<script src="//cdn.staticfile.org/layer/3.5.1/layer.js"></script>
+<script src="//cdn.staticfile.net/jquery/3.6.0/jquery.min.js"></script>
+<script src="//cdn.staticfile.net/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+<script src="//cdn.staticfile.net/layer/3.5.1/layer.js"></script>
 <script src="js/nioapp.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/common.js"></script>
@@ -341,8 +341,8 @@ $(document).ready(function(){
 })
 </script>
 
-<script src="//cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
-<script src="//cdn.staticfile.org/axios/0.26.0/axios.min.js"></script>
+<script src="//cdn.staticfile.net/vue/2.6.14/vue.min.js"></script>
+<script src="//cdn.staticfile.net/axios/0.26.0/axios.min.js"></script>
 <script>
 var errors = null
 new Vue({
@@ -532,46 +532,6 @@ new Vue({
     setInterval(updateRealTime, 1000);
      
 </script>
-
-<script>
-document.onkeydown = function(){
-  if(window.event && window.event.keyCode == 123) {
-    alert("F12被禁用");
-    event.keyCode=0;
-    event.returnValue=false;
-  }
-  if(window.event && window.event.keyCode == 13) {
-    window.event.keyCode = 505;
-  }
-  if(window.event && window.event.keyCode == 8) {
-    alert(str+"\n请使用Del键进行字符的删除操作！");
-    window.event.returnValue=false;
-  }
-}
-</script>  
- 
-  
-<script>document.oncontextmenu = function (event){
-if(window.event){
-event = window.event;
-}try{
-var the = event.srcElement;
-if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
-return false;
-}
-return true;
-}catch (e){
-return false;
-}
-}
-</script>  
-
-
-  <script>
-   
-  </script>
-
-
 
 
 <!-- 流量统计代码  20231117 放到最后延迟加载，避免页面长时间无响应  -->
